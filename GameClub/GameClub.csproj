@@ -1,0 +1,829 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\boardgames.png" />
+    <None Remove="Images\BoardGames\7_Wonders.jpg" />
+    <None Remove="Images\BoardGames\7_Wonders_Duel.jpg" />
+    <None Remove="Images\BoardGames\Aeon%27s_End.jpg" />
+    <None Remove="Images\BoardGames\Agricola.jpg" />
+    <None Remove="Images\BoardGames\Agricola_%28Revised_Edition%29.jpg" />
+    <None Remove="Images\BoardGames\Anachrony.jpg" />
+    <None Remove="Images\BoardGames\Android_Netrunner.jpg" />
+    <None Remove="Images\BoardGames\Architects_of_the_West_Kingdom.png" />
+    <None Remove="Images\BoardGames\Arkham_Horror_The_Card_Game.jpg" />
+    <None Remove="Images\BoardGames\Ark_Nova.jpg" />
+    <None Remove="Images\BoardGames\Azul.jpg" />
+    <None Remove="Images\BoardGames\A_Feast_for_Odin.png" />
+    <None Remove="Images\BoardGames\Barrage.png" />
+    <None Remove="Images\BoardGames\Battlestar_Galactica_The_Board_Game.jpg" />
+    <None Remove="Images\BoardGames\Blood_Rage.jpg" />
+    <None Remove="Images\BoardGames\Brass_Birmingham.jpg" />
+    <None Remove="Images\BoardGames\Brass_Lancashire.jpg" />
+    <None Remove="Images\BoardGames\Cascadia.jpg" />
+    <None Remove="Images\BoardGames\Caverna_The_Cave_Farmers.jpg" />
+    <None Remove="Images\BoardGames\Caylus.jpg" />
+    <None Remove="Images\BoardGames\Clank!_A_Deck-Building_Adventure.jpg" />
+    <None Remove="Images\BoardGames\Clank!_Legacy_Acquisitions_Incorporated.png" />
+    <None Remove="Images\BoardGames\Clans_of_Caledonia.png" />
+    <None Remove="Images\BoardGames\Concordia.jpg" />
+    <None Remove="Images\BoardGames\Crokinole.jpg" />
+    <None Remove="Images\BoardGames\Dominant_Species.jpg" />
+    <None Remove="Images\BoardGames\Dominion_Intrigue.jpg" />
+    <None Remove="Images\BoardGames\Dune_Imperium.jpg" />
+    <None Remove="Images\BoardGames\Eclipse.jpg" />
+    <None Remove="Images\BoardGames\Eclipse_Second_Dawn_for_the_Galaxy.jpg" />
+    <None Remove="Images\BoardGames\Eldritch_Horror.jpg" />
+    <None Remove="Images\BoardGames\El_Grande.png" />
+    <None Remove="Images\BoardGames\Everdell.png" />
+    <None Remove="Images\BoardGames\Fields_of_Arle.png" />
+    <None Remove="Images\BoardGames\Five_Tribes.jpg" />
+    <None Remove="Images\BoardGames\Food_Chain_Magnate.png" />
+    <None Remove="Images\BoardGames\Gaia_Project.png" />
+    <None Remove="Images\BoardGames\Gloomhaven.jpg" />
+    <None Remove="Images\BoardGames\Gloomhaven_Jaws_of_the_Lion.jpg" />
+    <None Remove="Images\BoardGames\Grand_Austria_Hotel.jpg" />
+    <None Remove="Images\BoardGames\Great_Western_Trail.jpg" />
+    <None Remove="Images\BoardGames\Kanban_EV.jpg" />
+    <None Remove="Images\BoardGames\Keyflower.jpg" />
+    <None Remove="Images\BoardGames\Kingdom_Death_Monster.jpg" />
+    <None Remove="Images\BoardGames\Le_Havre.jpg" />
+    <None Remove="Images\BoardGames\Lisboa.jpg" />
+    <None Remove="Images\BoardGames\Lords_of_Waterdeep.jpg" />
+    <None Remove="Images\BoardGames\Lorenzo_il_Magnifico.jpg" />
+    <None Remove="Images\BoardGames\Lost_Ruins_of_Arnak.jpg" />
+    <None Remove="Images\BoardGames\Mage_Knight_Board_Game.jpg" />
+    <None Remove="Images\BoardGames\Mansions_of_Madness_Second_Edition.jpg" />
+    <None Remove="Images\BoardGames\Maracaibo.jpg" />
+    <None Remove="Images\BoardGames\Marvel_Champions_The_Card_Game.jpg" />
+    <None Remove="Images\BoardGames\Mechs_vs._Minions.jpg" />
+    <None Remove="Images\BoardGames\Mombasa.jpg" />
+    <None Remove="Images\BoardGames\Nemesis.jpg" />
+    <None Remove="Images\BoardGames\On_Mars.jpg" />
+    <None Remove="Images\BoardGames\Orleans.jpg" />
+    <None Remove="Images\BoardGames\Paladins_of_the_West_Kingdom.png" />
+    <None Remove="Images\BoardGames\Pandemic_Legacy_Season_0.jpg" />
+    <None Remove="Images\BoardGames\Pandemic_Legacy_Season_1.png" />
+    <None Remove="Images\BoardGames\Pandemic_Legacy_Season_2.jpg" />
+    <None Remove="Images\BoardGames\Patchwork.jpg" />
+    <None Remove="Images\BoardGames\Pax_Pamir_Second_Edition.png" />
+    <None Remove="Images\BoardGames\Power_Grid.jpg" />
+    <None Remove="Images\BoardGames\Puerto_Rico.jpg" />
+    <None Remove="Images\BoardGames\Race_for_the_Galaxy.jpg" />
+    <None Remove="Images\BoardGames\Raiders_of_the_North_Sea.jpg" />
+    <None Remove="Images\BoardGames\Rising_Sun.jpg" />
+    <None Remove="Images\BoardGames\Robinson_Crusoe_Adventures_on_the_Cursed_Island.jpg" />
+    <None Remove="Images\BoardGames\Root.jpg" />
+    <None Remove="Images\BoardGames\Scythe.jpg" />
+    <None Remove="Images\BoardGames\Spirit_Island.png" />
+    <None Remove="Images\BoardGames\Star_Wars_Imperial_Assault.jpg" />
+    <None Remove="Images\BoardGames\Star_Wars_Rebellion.jpg" />
+    <None Remove="Images\BoardGames\Tainted_Grail_The_Fall_of_Avalon.jpg" />
+    <None Remove="Images\BoardGames\Teotihuacan_City_of_Gods.jpg" />
+    <None Remove="Images\BoardGames\Terraforming_Mars.jpg" />
+    <None Remove="Images\BoardGames\Terra_Mystica.jpg" />
+    <None Remove="Images\BoardGames\The_7th_Continent.jpg" />
+    <None Remove="Images\BoardGames\The_Castles_of_Burgundy.jpg" />
+    <None Remove="Images\BoardGames\The_Crew_Mission_Deep_Sea.jpg" />
+    <None Remove="Images\BoardGames\The_Crew_The_Quest_for_Planet_Nine.jpg" />
+    <None Remove="Images\BoardGames\The_Gallerist.png" />
+    <None Remove="Images\BoardGames\The_Lord_of_the_Rings_Journeys_in_Middle-Earth.jpg" />
+    <None Remove="Images\BoardGames\The_Quacks_of_Quedlinburg.png" />
+    <None Remove="Images\BoardGames\The_Voyages_of_Marco_Polo.png" />
+    <None Remove="Images\BoardGames\Through_the_Ages_A_New_Story_of_Civilization.jpg" />
+    <None Remove="Images\BoardGames\Through_the_Ages_A_Story_of_Civilization.jpg" />
+    <None Remove="Images\BoardGames\Tigris_&amp;_Euphrates.jpg" />
+    <None Remove="Images\BoardGames\Too_Many_Bones.png" />
+    <None Remove="Images\BoardGames\Troyes.jpg" />
+    <None Remove="Images\BoardGames\Twilight_Imperium_Fourth_Edition.jpg" />
+    <None Remove="Images\BoardGames\Twilight_Imperium_Third_Edition.jpg" />
+    <None Remove="Images\BoardGames\Twilight_Struggle.jpg" />
+    <None Remove="Images\BoardGames\Tzolk%27in_The_Mayan_Calendar.jpg" />
+    <None Remove="Images\BoardGames\Underwater_Cities.png" />
+    <None Remove="Images\BoardGames\Viticulture_Essential_Edition.jpg" />
+    <None Remove="Images\BoardGames\War_of_the_Ring_Second_Edition.jpg" />
+    <None Remove="Images\BoardGames\Wingspan.jpg" />
+    <None Remove="Images\icon.png" />
+    <None Remove="Images\VideoGames\Assassin%27s_Creed_II.png" />
+    <None Remove="Images\VideoGames\Baldur%27s_Gate.png" />
+    <None Remove="Images\VideoGames\Baldur%27s_Gate_II_Shadows_of_Amn.png" />
+    <None Remove="Images\VideoGames\Baldur%27s_Gate_II_Throne_of_Bhaal.png" />
+    <None Remove="Images\VideoGames\Batman_Arkham_Asylum.png" />
+    <None Remove="Images\VideoGames\Batman_Arkham_City.png" />
+    <None Remove="Images\VideoGames\BioShock.png" />
+    <None Remove="Images\VideoGames\Castlevania_Symphony_of_the_Night.png" />
+    <None Remove="Images\VideoGames\Chrono_Trigger.png" />
+    <None Remove="Images\VideoGames\Civilization.png" />
+    <None Remove="Images\VideoGames\Civilization_II.png" />
+    <None Remove="Images\VideoGames\Civilization_IV.png" />
+    <None Remove="Images\VideoGames\Civilization_IV_Beyond_the_Sword.png" />
+    <None Remove="Images\VideoGames\Civilization_V.png" />
+    <None Remove="Images\VideoGames\Civilization_V_Brave_New_World.png" />
+    <None Remove="Images\VideoGames\Deus_Ex.png" />
+    <None Remove="Images\VideoGames\Diablo_II.png" />
+    <None Remove="Images\VideoGames\Diablo_II_Lord_of_Destruction.png" />
+    <None Remove="Images\VideoGames\Dragon_Age_Origins.png" />
+    <None Remove="Images\VideoGames\Fallout_%281997%29.png" />
+    <None Remove="Images\VideoGames\Fallout_2.png" />
+    <None Remove="Images\VideoGames\Fallout_3.png" />
+    <None Remove="Images\VideoGames\Fallout_New_Vegas.png" />
+    <None Remove="Images\VideoGames\Final_Fantasy_IX.png" />
+    <None Remove="Images\VideoGames\Final_Fantasy_Tactics.png" />
+    <None Remove="Images\VideoGames\Final_Fantasy_VI.png" />
+    <None Remove="Images\VideoGames\Final_Fantasy_VII.png" />
+    <None Remove="Images\VideoGames\GoldenEye_007.png" />
+    <None Remove="Images\VideoGames\Grand_Theft_Auto_V.png" />
+    <None Remove="Images\VideoGames\Grim_Fandango.png" />
+    <None Remove="Images\VideoGames\Hades.png" />
+    <None Remove="Images\VideoGames\HALF-LIFE.png" />
+    <None Remove="Images\VideoGames\HALF-LIFE2.png" />
+    <None Remove="Images\VideoGames\HALF-LIFE2_Episode_Two.png" />
+    <None Remove="Images\VideoGames\Heroes_of_Might_and_Magic_III_The_Restoration_of_Erathia.png" />
+    <None Remove="Images\VideoGames\Hollow_Knight.png" />
+    <None Remove="Images\VideoGames\Horizon_Zero_Dawn.png" />
+    <None Remove="Images\VideoGames\Indiana_Jones_and_the_Fate_of_Atlantis.png" />
+    <None Remove="Images\VideoGames\Maniac_Mansion_Day_of_the_Tentacle.png" />
+    <None Remove="Images\VideoGames\Mario_Kart_8.png" />
+    <None Remove="Images\VideoGames\Mass_Effect.png" />
+    <None Remove="Images\VideoGames\Mass_Effect_2.png" />
+    <None Remove="Images\VideoGames\Mass_Effect_3.png" />
+    <None Remove="Images\VideoGames\Master_of_Magic.png" />
+    <None Remove="Images\VideoGames\Master_of_Orion.png" />
+    <None Remove="Images\VideoGames\Master_of_Orion_II_Battle_at_Antares.png" />
+    <None Remove="Images\VideoGames\Mega_Man_2.png" />
+    <None Remove="Images\VideoGames\Metal_Gear_Solid.png" />
+    <None Remove="Images\VideoGames\Metal_Gear_Solid_3_Snake_Eater.png" />
+    <None Remove="Images\VideoGames\Metroid_Prime.png" />
+    <None Remove="Images\VideoGames\Monkey_Island_2_LeChuck%27s_Revenge.png" />
+    <None Remove="Images\VideoGames\Paper_Mario_The_Thousand-Year_Door.png" />
+    <None Remove="Images\VideoGames\Planescape_Torment.png" />
+    <None Remove="Images\VideoGames\Portal_%282007%29.png" />
+    <None Remove="Images\VideoGames\Portal_2.png" />
+    <None Remove="Images\VideoGames\Red_Dead_Redemption.png" />
+    <None Remove="Images\VideoGames\Red_Dead_Redemption_II.png" />
+    <None Remove="Images\VideoGames\Resident_Evil_4.png" />
+    <None Remove="Images\VideoGames\Rock_Band_2.png" />
+    <None Remove="Images\VideoGames\Secret_of_Mana_%281993%29.png" />
+    <None Remove="Images\VideoGames\Shadow_of_the_Colossus_%282005%29.png" />
+    <None Remove="Images\VideoGames\Shin_Megami_Tensei_Persona_4.png" />
+    <None Remove="Images\VideoGames\Sid_Meier%27s_Alpha_Centauri.png" />
+    <None Remove="Images\VideoGames\Silent_Hill_2.png" />
+    <None Remove="Images\VideoGames\StarCraft.png" />
+    <None Remove="Images\VideoGames\StarCraft_Brood_War.png" />
+    <None Remove="Images\VideoGames\StarCraft_II_Wings_of_Liberty.png" />
+    <None Remove="Images\VideoGames\Star_Control_II.png" />
+    <None Remove="Images\VideoGames\Star_Wars_Knights_of_the_Old_Republic.png" />
+    <None Remove="Images\VideoGames\Star_Wars_TIE_Fighter.png" />
+    <None Remove="Images\VideoGames\Super_Mario_64.png" />
+    <None Remove="Images\VideoGames\Super_Mario_Bros._3.png" />
+    <None Remove="Images\VideoGames\Super_Mario_Galaxy.png" />
+    <None Remove="Images\VideoGames\Super_Mario_Galaxy_2.png" />
+    <None Remove="Images\VideoGames\Super_Mario_Odyssey.png" />
+    <None Remove="Images\VideoGames\Super_Mario_World.png" />
+    <None Remove="Images\VideoGames\Super_Metroid.png" />
+    <None Remove="Images\VideoGames\Super_Smash_Bros._Melee.png" />
+    <None Remove="Images\VideoGames\System_Shock_2.png" />
+    <None Remove="Images\VideoGames\The_Curse_of_Monkey_Island.png" />
+    <None Remove="Images\VideoGames\The_Elder_Scrolls_V_Skyrim.png" />
+    <None Remove="Images\VideoGames\The_Last_of_Us.png" />
+    <None Remove="Images\VideoGames\The_Legend_of_Zelda.png" />
+    <None Remove="Images\VideoGames\The_Legend_of_Zelda_A_Link_Between_Worlds.png" />
+    <None Remove="Images\VideoGames\The_Legend_of_Zelda_A_Link_to_the_Past.png" />
+    <None Remove="Images\VideoGames\The_Legend_of_Zelda_Breath_of_the_Wild.png" />
+    <None Remove="Images\VideoGames\The_Legend_of_Zelda_Link%27s_Awakening_%281993%29.png" />
+    <None Remove="Images\VideoGames\The_Legend_of_Zelda_Majora%27s_Mask.png" />
+    <None Remove="Images\VideoGames\The_Legend_of_Zelda_Ocarina_of_Time.png" />
+    <None Remove="Images\VideoGames\The_Legend_of_Zelda_The_Wind_Waker.png" />
+    <None Remove="Images\VideoGames\The_Legend_of_Zelda_Twilight_Princess.png" />
+    <None Remove="Images\VideoGames\The_Secret_of_Monkey_Island.png" />
+    <None Remove="Images\VideoGames\The_Witcher_3_Wild_Hunt.png" />
+    <None Remove="Images\VideoGames\Uncharted_2_Among_Thieves.png" />
+    <None Remove="Images\VideoGames\Uncharted_3_Drake%27s_Deception.png" />
+    <None Remove="Images\VideoGames\Valkyria_Chronicles.png" />
+    <None Remove="Images\VideoGames\Warcraft_III_The_Frozen_Throne.png" />
+    <None Remove="Images\VideoGames\X-COM_UFO_Defense.png" />
+    <None Remove="Images\VideoGames\XCOM_Enemy_Unknown.png" />
+    <None Remove="Images\VideoGames\XCOM_Enemy_Within.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\boardgames.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\7_Wonders.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\7_Wonders_Duel.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Aeon's_End.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Agricola.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Agricola_(Revised_Edition).jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Anachrony.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Android_Netrunner.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Architects_of_the_West_Kingdom.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Arkham_Horror_The_Card_Game.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Ark_Nova.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Azul.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\A_Feast_for_Odin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Barrage.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Battlestar_Galactica_The_Board_Game.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Blood_Rage.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Brass_Birmingham.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Brass_Lancashire.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Cascadia.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Caverna_The_Cave_Farmers.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Caylus.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Clank!_A_Deck-Building_Adventure.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Clank!_Legacy_Acquisitions_Incorporated.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Clans_of_Caledonia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Concordia.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Crokinole.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Dominant_Species.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Dominion_Intrigue.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Dune_Imperium.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Eclipse.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Eclipse_Second_Dawn_for_the_Galaxy.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Eldritch_Horror.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\El_Grande.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Everdell.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Fields_of_Arle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Five_Tribes.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Food_Chain_Magnate.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Gaia_Project.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Gloomhaven.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Gloomhaven_Jaws_of_the_Lion.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Grand_Austria_Hotel.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Great_Western_Trail.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Kanban_EV.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Keyflower.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Kingdom_Death_Monster.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Le_Havre.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Lisboa.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Lords_of_Waterdeep.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Lorenzo_il_Magnifico.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Lost_Ruins_of_Arnak.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Mage_Knight_Board_Game.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Mansions_of_Madness_Second_Edition.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Maracaibo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Marvel_Champions_The_Card_Game.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Mechs_vs._Minions.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Mombasa.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Nemesis.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\On_Mars.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Orleans.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Paladins_of_the_West_Kingdom.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Pandemic_Legacy_Season_0.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Pandemic_Legacy_Season_1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Pandemic_Legacy_Season_2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Patchwork.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Pax_Pamir_Second_Edition.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Power_Grid.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Puerto_Rico.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Race_for_the_Galaxy.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Raiders_of_the_North_Sea.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Rising_Sun.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Robinson_Crusoe_Adventures_on_the_Cursed_Island.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Root.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Scythe.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Spirit_Island.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Star_Wars_Imperial_Assault.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Star_Wars_Rebellion.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Tainted_Grail_The_Fall_of_Avalon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Teotihuacan_City_of_Gods.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Terraforming_Mars.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Terra_Mystica.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\The_7th_Continent.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\The_Castles_of_Burgundy.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\The_Crew_Mission_Deep_Sea.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\The_Crew_The_Quest_for_Planet_Nine.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\The_Gallerist.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\The_Lord_of_the_Rings_Journeys_in_Middle-Earth.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\The_Quacks_of_Quedlinburg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\The_Voyages_of_Marco_Polo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Through_the_Ages_A_New_Story_of_Civilization.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Through_the_Ages_A_Story_of_Civilization.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Tigris_&amp;_Euphrates.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Too_Many_Bones.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Troyes.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Twilight_Imperium_Fourth_Edition.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Twilight_Imperium_Third_Edition.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Twilight_Struggle.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Tzolk'in_The_Mayan_Calendar.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Underwater_Cities.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Viticulture_Essential_Edition.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\War_of_the_Ring_Second_Edition.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoardGames\Wingspan.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Assassin's_Creed_II.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Baldur's_Gate.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Baldur's_Gate_II_Shadows_of_Amn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Baldur's_Gate_II_Throne_of_Bhaal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Batman_Arkham_Asylum.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Batman_Arkham_City.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\BioShock.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Castlevania_Symphony_of_the_Night.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Chrono_Trigger.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Civilization.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Civilization_II.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Civilization_IV.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Civilization_IV_Beyond_the_Sword.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Civilization_V.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Civilization_V_Brave_New_World.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Deus_Ex.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Diablo_II.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Diablo_II_Lord_of_Destruction.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Dragon_Age_Origins.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Fallout_(1997).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Fallout_2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Fallout_3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Fallout_New_Vegas.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Final_Fantasy_IX.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Final_Fantasy_Tactics.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Final_Fantasy_VI.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Final_Fantasy_VII.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\GoldenEye_007.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Grand_Theft_Auto_V.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Grim_Fandango.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Hades.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\HALF-LIFE.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\HALF-LIFE2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\HALF-LIFE2_Episode_Two.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Heroes_of_Might_and_Magic_III_The_Restoration_of_Erathia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Hollow_Knight.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Horizon_Zero_Dawn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Indiana_Jones_and_the_Fate_of_Atlantis.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Maniac_Mansion_Day_of_the_Tentacle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Mario_Kart_8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Mass_Effect.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Mass_Effect_2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Mass_Effect_3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Master_of_Magic.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Master_of_Orion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Master_of_Orion_II_Battle_at_Antares.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Mega_Man_2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Metal_Gear_Solid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Metal_Gear_Solid_3_Snake_Eater.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Metroid_Prime.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Monkey_Island_2_LeChuck's_Revenge.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Paper_Mario_The_Thousand-Year_Door.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Planescape_Torment.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Portal_(2007).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Portal_2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Red_Dead_Redemption.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Red_Dead_Redemption_II.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Resident_Evil_4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Rock_Band_2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Secret_of_Mana_(1993).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Shadow_of_the_Colossus_(2005).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Shin_Megami_Tensei_Persona_4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Sid_Meier's_Alpha_Centauri.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Silent_Hill_2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\StarCraft.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\StarCraft_Brood_War.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\StarCraft_II_Wings_of_Liberty.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Star_Control_II.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Star_Wars_Knights_of_the_Old_Republic.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Star_Wars_TIE_Fighter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Super_Mario_64.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Super_Mario_Bros._3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Super_Mario_Galaxy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Super_Mario_Galaxy_2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Super_Mario_Odyssey.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Super_Mario_World.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Super_Metroid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Super_Smash_Bros._Melee.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\System_Shock_2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\The_Curse_of_Monkey_Island.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\The_Elder_Scrolls_V_Skyrim.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\The_Last_of_Us.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\The_Legend_of_Zelda.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\The_Legend_of_Zelda_A_Link_Between_Worlds.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\The_Legend_of_Zelda_A_Link_to_the_Past.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\The_Legend_of_Zelda_Breath_of_the_Wild.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\The_Legend_of_Zelda_Link's_Awakening_(1993).png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\The_Legend_of_Zelda_Majora's_Mask.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\The_Legend_of_Zelda_Ocarina_of_Time.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\The_Legend_of_Zelda_The_Wind_Waker.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\The_Legend_of_Zelda_Twilight_Princess.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\The_Secret_of_Monkey_Island.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\The_Witcher_3_Wild_Hunt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Uncharted_2_Among_Thieves.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Uncharted_3_Drake's_Deception.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Valkyria_Chronicles.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\Warcraft_III_The_Frozen_Throne.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\X-COM_UFO_Defense.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\XCOM_Enemy_Unknown.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\VideoGames\XCOM_Enemy_Within.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GameClubClassLib\GameClubClassLib.csproj" />
+  </ItemGroup>
+
+</Project>
