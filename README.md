@@ -75,7 +75,7 @@ IRetailable:
 De klassen diagram van de class library ziet er als volgt uit:
 #### 1.4.1 Entity klassen
 
-![Interface](/media/Interfacee.png)
+![Interface](/media/Interface.png)
 ![Entity classes](/media/EntityClasses.png)
 
 #### 1.4.2 Statische klassen
@@ -89,7 +89,7 @@ De applicatie bevat een WPF project, genaamd GameClubWPF, dat bestaat uit twee v
 XAML voorwaarden:
 - De XAML van het overzichtsvenster kan je terugvinden in de startbestanden. Je moet deze niet zelf maken.
 
-![Login venster](/media/SLoginvenster.jpeg)
+![Login venster](/media/Loginvenster.jpeg)
 
 Programmeer voorwaarden:
 - Als gebruiker kan ik op de “Log In”-knop klikken, om mezelf in te loggen. Een gebruiker kan enkel inloggen door de naam “Koen”, “Wim” of “Sander” in te geven met het wachtwoord “PXL123”.
